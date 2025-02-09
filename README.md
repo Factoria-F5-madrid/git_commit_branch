@@ -30,7 +30,7 @@ cd pagina-web-ejemplo
 Clona el repositorio en tu máquina local:
 
 ```sh
-git checkout -b feature/pagina-principal
+git checkout -b feature/tu-nombre
 ```
 
 ### 3. Crear un archivo HTML y CSS
