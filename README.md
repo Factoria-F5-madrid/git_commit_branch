@@ -144,7 +144,9 @@ git checkout feature/pagina-principal
 git merge feature/nueva-seccion
 ```
 
-Git mostrará un conflicto. Abre el `index.html` y resuelve el conflicto editando el archivo para que luzca así:
+Git mostrará un conflicto. Abre el `index.html` y resuelve el conflicto editando el archivo para que luzca así, es decir haciendo click en "accept incoming change":
+
+<img width="717" height="350" alt="image" src="https://github.com/user-attachments/assets/33c6aa74-a085-467d-99d8-e331b026e5d9" />
 
 ```html
 <p>Esta es una página de ejemplo con información adicional y una nueva sección.</p>
@@ -157,19 +159,21 @@ Git mostrará un conflicto. Abre el `index.html` y resuelve el conflicto editand
 ### 11. Finalizar el Merge
 Añade y commitea los cambios resueltos:
 
+- Es normal que en el archivo index aparezca un signo "!" y el nombre en rojo aunque se haya resuelto el conflicto, esto no cambiará hasta que hagas commit.
+
 ```sh
 git add index.html
 git commit -m "merge: resolver el conflicto entre las ramas feature/pagina-principal y feature/nueva-seccion"
 ```
 
-### 12. Empujar los Cambios al Repositorio Remoto
-Empuja los cambios al repositorio remoto:
+### 12. Enviar los Cambios al Repositorio Remoto
+Envía los cambios al repositorio remoto:
 
 ```sh
 git push origin feature/pagina-principal
 ```
 
-### 13. Crear un Pull Request en GitHub
+### 13. Crear un Pull Request en GitHub (**OPCIONAL**)
 
 1. Ve a GitHub y abre tu repositorio.
 2. Verás una opción para crear un Pull Request para la rama `feature/pagina-principal`.
