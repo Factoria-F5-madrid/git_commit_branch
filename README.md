@@ -16,13 +16,50 @@ Este proyecto es una guía práctica para aprender a usar Git y GitHub con ramas
 
 ## Pasos de la Actividad
 
-### 1. Clonar el Repositorio
+### 1. Crear un repositorio en github y conectarlo a tu local
 
-Clona el repositorio en tu máquina local:
+Crea una carpeta en tu ordenador:
 
 ```sh
-git clone https://github.com/AlexandraZambrano/git_commit_branch.git
-cd pagina-web-ejemplo
+mkdir practica-git
+```
+
+navegar a ella:
+
+```sh
+cd practica-git
+```
+
+Y luego de haber creado también un repositorio en github usar los siguientes comandos para conectarlo a tu local:
+
+Inicializa git dentro de tu carpeta>
+
+```sh
+git init
+```
+Crea un archivo de ejemplo (como un README) para tener algo que subir
+```sh
+echo "# Práctica Git" >> README.md
+```
+Añade los archivos al "staging area" de Git
+```sh
+git add .
+```
+Confirma (commit) los archivos por primera vez
+```sh
+git commit -m "first commit"
+```
+Renombra la rama local a 'main' si tienes un rama llamad 'Master' en lugar de 'main'
+```sh
+git branch -M main
+```
+Conecta tu repositorio local con el nuevo repositorio remoto en GitHub (Reemplaza [URL_DEL_REPOSITORIO] con la URL real de tu repo de GitHub)
+```sh
+git remote add origin [URL_DEL_REPOSITORIO]
+```
+Sube tu código local a GitHub
+```sh
+git push -u origin main
 ```
 
 ### 2. Crear una rama para la funcionalidad principal
