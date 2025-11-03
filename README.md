@@ -41,6 +41,14 @@ Crea un archivo de ejemplo (como un README) para tener algo que subir
 ```sh
 echo "# Práctica Git" >> README.md
 ```
+Conecta tu repositorio local con el nuevo repositorio remoto en GitHub (Reemplaza [URL_DEL_REPOSITORIO] con la URL real de tu repo de GitHub)
+```sh
+git remote add origin [URL_DEL_REPOSITORIO]
+```
+Renombra la rama local a 'main' si tienes un rama llamad 'Master' en lugar de 'main'
+```sh
+git branch -M main
+```
 Añade los archivos al "staging area" de Git
 ```sh
 git add .
@@ -48,14 +56,6 @@ git add .
 Confirma (commit) los archivos por primera vez
 ```sh
 git commit -m "first commit"
-```
-Renombra la rama local a 'main' si tienes un rama llamad 'Master' en lugar de 'main'
-```sh
-git branch -M main
-```
-Conecta tu repositorio local con el nuevo repositorio remoto en GitHub (Reemplaza [URL_DEL_REPOSITORIO] con la URL real de tu repo de GitHub)
-```sh
-git remote add origin [URL_DEL_REPOSITORIO]
 ```
 Sube tu código local a GitHub
 ```sh
