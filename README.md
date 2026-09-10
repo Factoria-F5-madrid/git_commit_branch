@@ -186,7 +186,7 @@ Git mostrará un conflicto. Abre el `index.html` y resuelve el conflicto editand
 <img width="717" height="350" alt="image" src="https://github.com/user-attachments/assets/33c6aa74-a085-467d-99d8-e331b026e5d9" />
 
 ```html
-<p>Esta es una página de ejemplo con información adicional y una nueva sección.</p>
+<p>Esta es una página de ejemplo.</p>
 <div>
     <h2>Nueva Sección</h2>
     <p>Contenido de la nueva sección.</p>
