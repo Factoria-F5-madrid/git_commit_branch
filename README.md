@@ -161,7 +161,6 @@ Modifica el párrafo:
 Haz un commit:
 
 ```sh
-Copy code
 git add index.html
 git commit -m "fix: actualizar el contenido del párrafo en la página principal"
 ```
@@ -169,7 +168,6 @@ git commit -m "fix: actualizar el contenido del párrafo en la página principal
 Haz push a los cambios:
 
 ```sh
-Copy code
 git push origin feature/pagina-principal
 ```
 
